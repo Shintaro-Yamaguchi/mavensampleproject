@@ -2,43 +2,43 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" metadata-complete="true" version="4.0">
   <servlet>
     <servlet-name>hello</servlet-name>
-    <servlet-class>sampleproject.HelloWorld</servlet-class>
+    <servlet-class>HelloWorld</servlet-class>
   </servlet>
   <servlet>
     <servlet-name>morning</servlet-name>
-    <servlet-class>sampleproject.GoodMorning</servlet-class>
+    <servlet-class>GoodMorning</servlet-class>
   </servlet>
   <servlet>
     <servlet-name>toppage</servlet-name>
-    <servlet-class>sampleproject.Top</servlet-class>
+    <servlet-class>Top</servlet-class>
   </servlet>
   <servlet>
     <servlet-name>introduction</servlet-name>
-    <servlet-class>sampleproject.Introduction</servlet-class>
+    <servlet-class>Introduction</servlet-class>
   </servlet>
   <servlet>
     <servlet-name>contact</servlet-name>
-    <servlet-class>sampleproject.Contact</servlet-class>
+    <servlet-class>Contact</servlet-class>
   </servlet>
   <servlet>
     <servlet-name>getcontact</servlet-name>
-    <servlet-class>sampleproject.Get_contact</servlet-class>
+    <servlet-class>Get_contact</servlet-class>
   </servlet>
   <servlet>
     <servlet-name>update</servlet-name>
-    <servlet-class>sampleproject.Update</servlet-class>
+    <servlet-class>Update</servlet-class>
   </servlet>
   <servlet>
     <servlet-name>updatecontact</servlet-name>
-    <servlet-class>sampleproject.Update_contact</servlet-class>
+    <servlet-class>Update_contact</servlet-class>
   </servlet>
   <servlet>
     <servlet-name>delete</servlet-name>
-    <servlet-class>sampleproject.Delete</servlet-class>
+    <servlet-class>Delete</servlet-class>
   </servlet>
   <servlet>
     <servlet-name>deletecontact</servlet-name>
-    <servlet-class>sampleproject.Delete_contact</servlet-class>
+    <servlet-class>Delete_contact</servlet-class>
   </servlet>
   
   <servlet-mapping>
