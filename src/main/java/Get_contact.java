@@ -67,7 +67,7 @@ private static final long serialVersionUID = 1L;
   {
 	request.setCharacterEncoding("UTF-8");
 	
-	String sql = "INSERT INTO contact(username,gender,message,file) values(?,?,?,?)";
+	String sql = "INSERT INTO contact(username,gender,message,file,delete_flag) values(?,?,?,?,?)";
 	String value = request.getParameter("username");
 	System.out.println(value);
 	
@@ -80,6 +80,8 @@ private static final long serialVersionUID = 1L;
 	String value4 = request.getParameter("file");
 	System.out.println(value4);
 	
+	Integer value0 = 0;
+	
 	try {
 		// コネクション取得
 		Class.forName("com.mysql.cj.jdbc.Driver");
@@ -89,6 +91,7 @@ private static final long serialVersionUID = 1L;
 		st.setString(2,value2);
 		st.setString(3,value3);
 		st.setString(4,value4);
+		st.setInt(5,value0);
 		
 		// SQL文送信	
 		int num = st.executeUpdate();
