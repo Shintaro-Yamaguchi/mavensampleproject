@@ -6,7 +6,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <title>データ取得内容</title>
+    <title>取得内容</title>
     <meta name="description" content="データベース取得内容">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/get_contact.css">
   </head>
