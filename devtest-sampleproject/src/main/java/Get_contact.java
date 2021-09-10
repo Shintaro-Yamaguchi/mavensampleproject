@@ -31,7 +31,7 @@ private static final long serialVersionUID = 1L;
 	
 	try {
 		Class.forName("com.mysql.cj.jdbc.Driver");
-		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/itemdb","root","YamaShin5032");
+		Connection con = DriverManager.getConnection("jdbc:mysql://us-cdbr-east-04.cleardb.com/heroku_9e44b2d9106b841","b9cbca6548c865","3e1c01a0");
 		PreparedStatement st = con.prepareStatement(sql);
 		ResultSet rs = st.executeQuery();
 		while (rs.next()) {
@@ -67,7 +67,7 @@ private static final long serialVersionUID = 1L;
   {
 	request.setCharacterEncoding("UTF-8");
 	
-	String sql = "INSERT INTO contact(username,gender,message,file) values(?,?,?,?)";
+	String sql = "INSERT INTO contact(username,gender,message,file,delete_flag) values(?,?,?,?,?)";
 	String value = request.getParameter("username");
 	System.out.println(value);
 	
@@ -80,15 +80,18 @@ private static final long serialVersionUID = 1L;
 	String value4 = request.getParameter("file");
 	System.out.println(value4);
 	
+	Integer value0 = 0;
+	
 	try {
 		// コネクション取得
 		Class.forName("com.mysql.cj.jdbc.Driver");
-		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/itemdb","root","YamaShin5032");
+		Connection con = DriverManager.getConnection("jdbc:mysql://us-cdbr-east-04.cleardb.com/heroku_9e44b2d9106b841","b9cbca6548c865","3e1c01a0");
 		PreparedStatement st = con.prepareStatement(sql);		
 		st.setString(1,value);
 		st.setString(2,value2);
 		st.setString(3,value3);
 		st.setString(4,value4);
+		st.setInt(5,value0);
 		
 		// SQL文送信	
 		int num = st.executeUpdate();

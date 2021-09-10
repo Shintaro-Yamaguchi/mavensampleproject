@@ -31,7 +31,7 @@ private static final long serialVersionUID = 1L;
 	
 	try {
 		Class.forName("com.mysql.cj.jdbc.Driver");
-		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/itemdb","root","YamaShin5032");
+		Connection con = DriverManager.getConnection("jdbc:mysql://us-cdbr-east-04.cleardb.com/heroku_9e44b2d9106b841","b9cbca6548c865","3e1c01a0");
 		PreparedStatement st = con.prepareStatement(sql);
 		ResultSet rs = st.executeQuery();
 		while (rs.next()) {
@@ -87,7 +87,7 @@ private static final long serialVersionUID = 1L;
 	try {
 		// コネクション取得
 		Class.forName("com.mysql.cj.jdbc.Driver");
-		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/itemdb","root","YamaShin5032");
+		Connection con = DriverManager.getConnection("jdbc:mysql://us-cdbr-east-04.cleardb.com/heroku_9e44b2d9106b841","b9cbca6548c865","3e1c01a0");
 		PreparedStatement st = con.prepareStatement(sql);		
 		st.setString(1,value0);
 		

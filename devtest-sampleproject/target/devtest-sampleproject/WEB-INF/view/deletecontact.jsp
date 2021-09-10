@@ -6,12 +6,12 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <title>データ取得内容</title>
-    <meta name="description" content="データベース取得内容">
+    <title>データベース取得内容(更新済)</title>
+    <meta name="description" content="データベース取得内容(更新済)">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/get_contact.css">
   </head>
 <body>
-	<h1>データ一覧</h1>
+	<h1>更新済</h1>
     
     <table>
 	    <tr>
@@ -37,13 +37,7 @@
 	        <% out.println("</td>"); %>
 	        
 	        <% out.println("<td>"); %>
-	          <% 
-	          	if (gender.get(i) == 0) {
-	        	  	out.println("男性");
-	          	} else if (gender.get(i) == 1) {
-	          		out.println("女性");
-	          	}
-	          %>
+	          <%= gender.get(i) %>
 	        <% out.println("</td>"); %>
 	        
 	        <% out.println("<td>"); %>
