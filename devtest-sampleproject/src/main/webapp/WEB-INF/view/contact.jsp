@@ -10,7 +10,7 @@
   </head>
   <body>
     <header>
-      <h1>お問い合わせ</h1>
+      <h1>問い合わせ</h1>
     </header>
 
     <nav>
