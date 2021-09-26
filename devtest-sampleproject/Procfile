@@ -1,1 +1,1 @@
-web: java -war target/devtest-sampleproject-0.0.1-SNAPSHOT.war
+web: java -war target/devtest-sampleproject.war
